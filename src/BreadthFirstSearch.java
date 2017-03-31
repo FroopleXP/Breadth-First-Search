@@ -22,8 +22,16 @@ public class BreadthFirstSearch {
         nodeFour.setAdjNodes(new breadthNode[] { nodeTwo, nodeThree });
         nodeFive.setAdjNodes(new breadthNode[] { nodeThree, nodeOne});
 
+        // Creating the network
+        breadthNode[] network = new breadthNode[] { nodeOne, nodeTwo, nodeThree, nodeFour, nodeFive };
+
         // Start the algorithm
-        System.out.print("Start the algorithm!");
+        String path = search(network, 1, 5);
+
+    }
+
+    // Used to actually search through the network
+    public String search(breadthNode[] network, int start, int goal) {
 
     }
 

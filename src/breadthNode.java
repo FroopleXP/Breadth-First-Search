@@ -33,4 +33,9 @@ public class breadthNode {
         this.parent = parentNode;
     }
 
+    // Used to return the id of the node
+    public int getNodeId () {
+        return this.nodeId;
+    }
+
 }
