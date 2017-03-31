@@ -17,8 +17,6 @@ public class BreadthFirstSearch {
     private breadthNode[] nodeFourAdj = new breadthNode[] { nodeTwo, nodeThree };
     private breadthNode[] nodeFiveAdj = new breadthNode[] { nodeThree, nodeOne };
 
-    // Adding the adjacent nodes to the nodes
-
     // Adding the nodes to the network
     breadthNode[] network = new breadthNode[] {
             nodeOne, nodeTwo, nodeThree, nodeFour, nodeFive
