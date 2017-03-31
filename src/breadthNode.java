@@ -12,6 +12,7 @@ public class breadthNode {
     // Constructor
     breadthNode(int nodeId) {
         this.nodeId = nodeId;
+        this.parentNode = null;
     }
 
     // Used to set the parent node
