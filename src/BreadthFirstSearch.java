@@ -31,8 +31,8 @@ public class BreadthFirstSearch {
     }
 
     // Used to actually search through the network
-    public String search(breadthNode[] network, int start, int goal) {
-
+    public static String search(breadthNode[] network, int start, int goal) {
+        return "Boobs";
     }
 
 }
