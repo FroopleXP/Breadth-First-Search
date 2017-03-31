@@ -26,8 +26,14 @@ public class BreadthFirstSearch {
         breadthNode[] network = new breadthNode[] { nodeOne, nodeTwo, nodeThree, nodeFour, nodeFive };
 
         // Start the algorithm
-        System.out.print(network[0].getSearch());
+        String path = search(network, 1, 5);
 
     }
+
+    // This is used to actually search through the network
+    public static String search(breadthNode[] network, int start, int goal) {
+        return null;
+    }
+
 
 }
