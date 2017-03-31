@@ -39,4 +39,14 @@ public class breadthNode {
         return this.nodeId;
     }
 
+    // Used to return adjNode
+    public breadthNode[] getAdjNodes() {
+        return this.adjNodes;
+    }
+
+    // Used to get the parent node
+    public breadthNode getParentNode() {
+        return this.parentNode;
+    }
+
 }
