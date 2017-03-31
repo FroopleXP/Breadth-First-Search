@@ -1,36 +1,37 @@
 /**
-
-    BREADTH FIRST SEARCH ALGORITHM
-    Written by: Connor Edwards
-
+ * Created by conno on 31/03/2017.
  */
 public class breadthNode {
 
-    private int nodeId; // Holds the ID of the Node
+    // Values of the node
+    private breadthNode parentNode;
+    private boolean search;
+    private int nodeId;
+    private breadthNode[] adjNodes;
 
-    private breadthNode[] adjNodes; // Holds the adjacent nodes
-    private boolean searched; // Holds the value of whether or not this node has been searched
-    private breadthNode parent; // Will contain the ID of it's parent
-
-    // When a new Node is created it is given an ID
+    // Constructor
     breadthNode(int nodeId) {
         this.nodeId = nodeId;
-        this.searched = false;
-    }
-
-    // Used to set the adjacent node of the node
-    public void setAdjNodes(breadthNode[] nodes) {
-        this.adjNodes = nodes;
-    }
-
-    // Used to set the searched value (True/false)
-    public void setSearched(boolean searched) {
-        this.searched = searched;
     }
 
     // Used to set the parent node
-    public void setParent(breadthNode parentNode) {
-        this.parent = parentNode;
+    public void setParentNode(breadthNode parent) {
+        this.parentNode = parent;
+    }
+
+    // Used to set the search value
+    public void setSearch(boolean searched) {
+        this.search = searched;
+    }
+
+    // Used to get the searched value
+    public boolean getSearch() {
+        return this.search;
+    }
+
+    // Used to set the adjacent nodes
+    public void setAdjNodes(breadthNode[] adjNodes) {
+        this.adjNodes = adjNodes;
     }
 
     // Used to return the id of the node

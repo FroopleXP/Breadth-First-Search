@@ -1,12 +1,10 @@
 /**
-
-    BREADTH FIRST SEARCH ALGORITHM
-    Written by: Connor Edwards
-
+ * Created by conno on 31/03/2017.
  */
-public class BreadthFirstSearch {
+public class breadthNetwork {
 
-    public static void main(String[] args) {
+    // Used to create a network of nodes
+    breadthNode[] breadthNetwork() {
 
         // Creating the nodes of the network
         breadthNode nodeOne = new breadthNode(1);
@@ -22,11 +20,10 @@ public class BreadthFirstSearch {
         nodeFour.setAdjNodes(new breadthNode[] { nodeTwo, nodeThree });
         nodeFive.setAdjNodes(new breadthNode[] { nodeOne, nodeThree });
 
-        // Creating the network
+        // Returning the network
         breadthNode[] network = new breadthNode[] { nodeOne, nodeTwo, nodeThree, nodeFour, nodeFive };
 
-        // Start the algorithm
-        System.out.print(network[0].getSearch());
+        return network;
 
     }
 
