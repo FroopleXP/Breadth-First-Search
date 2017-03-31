@@ -1,30 +1,30 @@
 /**
- * Created by conno on 31/03/2017.
+
+    BREADTH FIRST SEARCH ALGORITHM
+    Written by: Connor Edwards
+
  */
 public class BreadthFirstSearch {
 
-    // Creating a mock network, this will later be generated via JSON
-    private breadthNode nodeOne = new breadthNode(1);
-    private breadthNode nodeTwo = new breadthNode(2);
-    private breadthNode nodeThree = new breadthNode(3);
-    private breadthNode nodeFour = new breadthNode(4);
-    private breadthNode nodeFive = new breadthNode(5);
-
-    // Creating the adjacent nodes for each node
-    private breadthNode[] nodeOneAdj = new breadthNode[] { nodeTwo, nodeFive };
-    private breadthNode[] nodeTwoAdj = new breadthNode[] { nodeOne, nodeThree, nodeFour };
-    private breadthNode[] nodeThreeAdj = new breadthNode[] { nodeTwo, nodeFour, nodeFive };
-    private breadthNode[] nodeFourAdj = new breadthNode[] { nodeTwo, nodeThree };
-    private breadthNode[] nodeFiveAdj = new breadthNode[] { nodeThree, nodeOne };
-
-    // Adding the nodes to the network
-    breadthNode[] network = new breadthNode[] {
-            nodeOne, nodeTwo, nodeThree, nodeFour, nodeFive
-    };
-
     public static void main(String[] args) {
-        System.out.print("This is a test...");
-    }
 
+        // Creating a mock network, this will later be created via a JSON file
+        breadthNode nodeOne = new breadthNode(1);
+        breadthNode nodeTwo = new breadthNode(2);
+        breadthNode nodeThree = new breadthNode(3);
+        breadthNode nodeFour = new breadthNode(4);
+        breadthNode nodeFive = new breadthNode(5);
+
+        // Creating adjacent nodes for each node
+        nodeOne.setAdjNodes(new breadthNode[] { nodeTwo, nodeFive });
+        nodeTwo.setAdjNodes(new breadthNode[] { nodeOne, nodeThree, nodeFour });
+        nodeThree.setAdjNodes(new breadthNode[] { nodeTwo, nodeFour, nodeThree });
+        nodeFour.setAdjNodes(new breadthNode[] { nodeTwo, nodeThree });
+        nodeFive.setAdjNodes(new breadthNode[] { nodeThree, nodeOne});
+
+        // Start the algorithm
+        System.out.print("Start the algorithm!");
+
+    }
 
 }

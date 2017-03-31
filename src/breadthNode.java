@@ -1,5 +1,8 @@
 /**
- * Created by conno on 31/03/2017.
+
+    BREADTH FIRST SEARCH ALGORITHM
+    Written by: Connor Edwards
+
  */
 public class breadthNode {
 
